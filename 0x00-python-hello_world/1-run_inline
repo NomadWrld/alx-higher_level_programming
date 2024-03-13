@@ -1,0 +1,11 @@
+#!/bin/bash
+# This script runs Python code stored in the environment variable $PYCODE
+
+# Check if $PYCODE is set
+if [ -z "$PYCODE" ]; then
+echo "Error: Environment variable PYCODE is not set"
+exit 1
+fi
+
+# Run the Python code
+python3 -c "$PYCODE"
